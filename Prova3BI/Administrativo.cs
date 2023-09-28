@@ -12,7 +12,7 @@ namespace Prova3BI
             public double ValeAlimento { get; set; }
 
             public Administrativo() { }
-            public Administrativo(double valetrans, double valealim, string nome, string cpf, string matricula, DateTime datanasc, string sexo, double salariofinal, double salario) :
+            public Administrativo(double valetrans, double valealim, string nome, string cpf, string matricula, DateTime datanasc, string sexo, double salario) :
             base(nome, cpf, matricula, datanasc, sexo, salario)
             {
                 Valetransporte = valetrans;
@@ -22,7 +22,7 @@ namespace Prova3BI
             public override void InformarSalarioAdm()
             {
                 Salario = 0;
-                Valetransporte = 250.00;
+                Valetransporte = 250;
                 double salariominimo = 2000;
                 Salario = salariominimo + Valetransporte + (salariominimo * 17) / 100;
                 Console.WriteLine($"Seu sálario é de: {Salario}");
