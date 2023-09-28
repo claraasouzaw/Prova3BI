@@ -1,0 +1,15 @@
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.csproj.AssemblyReference.cache
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.AssemblyInfoInputs.cache
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.AssemblyInfo.cs
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.csproj.CoreCompileInputs.cache
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\bin\Debug\net6.0\Prova3BI.exe
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\bin\Debug\net6.0\Prova3BI.deps.json
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\bin\Debug\net6.0\Prova3BI.runtimeconfig.json
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\bin\Debug\net6.0\Prova3BI.dll
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\bin\Debug\net6.0\Prova3BI.pdb
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.dll
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\refint\Prova3BI.dll
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.pdb
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\Prova3BI.genruntimeconfig.cache
+C:\Users\2022102020065\source\repos\Prova3BI\Prova3BI\obj\Debug\net6.0\ref\Prova3BI.dll

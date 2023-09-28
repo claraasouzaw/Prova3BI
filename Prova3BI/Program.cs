@@ -1,84 +1,42 @@
 ﻿using Prova3BI;
-using System; 
+using System;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Por favor ensira de qual forma você deseja cadastrar: ");
+        string escolha = Convert.ToString(Console.ReadLine());
+        Console.WriteLine(escolha);
 
-    }
-}
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
+        Funcionario f = new Funcionario();
 
-namespace ControleFuncionarios
-{
-    public partial class MainForm : Form
-    {
-        private List<Funcionario> funcionarios = new List<Funcionario>();
-
-        public MainForm()
+        if (escolha == "Médico")
         {
-            InitializeComponent();
+            fMedico m = new fMedico();
+
+            List<fMedico> listmed = new List<fMedico>();
+            listmed.Add(m);
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        else if (escolha == "Administrador")
         {
-            string tipo = cboTipoFuncionario.Text;
-            Funcionario funcionario = null;
-
-            try
+            Administrativo a = new Administrativo();
+            a.InformarSalarioAdm();
+            List<Administrativo> listadm = new List<Administrativo>();
+            listadm.Add(a);
+            foreach (Administrativo a1 in listadm)
             {
-                if (tipo == "Médico")
-                {
-                    funcionario = CadastrarMedico();
-                }
-                else if (tipo == "Administrativo")
-                {
-                    funcionario = CadastrarAdministrativo();
-                }
-                else
-                {
-                    MessageBox.Show("Selecione um tipo de funcionário válido.");
-                    return;
-                }
-
-                funcionarios.Add(funcionario);
-                LimparCampos();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Erro ao cadastrar funcionário: {ex.Message}");
+                Console.WriteLine($"O salario do administrador é: {a1.InformarSalarioAdm}");
             }
         }
 
-        private Medico CadastrarMedico()
+        else
         {
-            // Implemente a lógica para cadastrar um médico e retorne um objeto Medico.
-        }
-
-        private Administrativo CadastrarAdministrativo()
-        {
-            // Implemente a lógica para cadastrar um funcionário administrativo e retorne um objeto Administrativo.
-        }
-
-        private void LimparCampos()
-        {
-            // Implemente a lógica para limpar os campos de entrada.
-        }
-
-        private void btnImprimir_Click(object sender, EventArgs e)
-        {
-            lstResultados.Items.Clear();
-
-            foreach (var func in funcionarios)
-            {
-                if (func.CalcularSalarioComBeneficios() > 2000.00)
-                {
-                    lstResultados.Items.Add(func.ToString());
-                }
-            }
+            Console.WriteLine("Vihs!! Ocorreu um erro, por favor tente novamente!");
         }
     }
 }
+
+    
